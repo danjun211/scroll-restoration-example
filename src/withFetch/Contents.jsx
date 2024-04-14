@@ -14,6 +14,7 @@ const Contents = (props = {}) => {
 
       setItems(data);
     })();
+    // setItems(new Array(count).fill(0));
   }, [count, delay, setItems]);
 
   return (

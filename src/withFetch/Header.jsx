@@ -24,7 +24,7 @@ const Header = ({ title }) => {
 
   return (
     <div className="header sticky">
-      <h1>{title}</h1>
+      <h1>{title} (동적 페이지)</h1>
       <div>현재 스크롤 Y 포지션: {scroll}</div>
       <select value={mode} onChange={(e) => setMode(e.currentTarget.value)}>
         <option value="즉시 로드">즉시 로드</option>

@@ -1,10 +1,17 @@
 import ReactDOM from "react-dom/client";
-import Root from "./Root.jsx";
-import Page1 from "./Page1.jsx";
-import Page2 from "./Page2.jsx";
-import Index from "./Index.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./index.css";
+
+// import Root from "./withoutFetch/Root.jsx";
+// import Page1 from "./withoutFetch/Page1.jsx";
+// import Page2 from "./withoutFetch/Page2.jsx";
+// import Index from "./withoutFetch/Index.jsx";
+// import "./withoutFetch/index.css";
+
+import Root from "./withFetch/Root.jsx";
+import Page1 from "./withFetch/Page1.jsx";
+import Page2 from "./withFetch/Page2.jsx";
+import Index from "./withFetch/Index.jsx";
+import "./withFetch/index.css";
 
 const router = createBrowserRouter([
   {
