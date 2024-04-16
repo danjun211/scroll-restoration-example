@@ -5,7 +5,7 @@ function Page2() {
   return (
     <>
       <Header title="page2" />
-      <Contents count={500} />
+      <Contents count={10} />
     </>
   );
 }

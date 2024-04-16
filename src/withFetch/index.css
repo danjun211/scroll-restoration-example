@@ -67,6 +67,10 @@ button:focus-visible {
   }
 }
 
+#root {
+  min-height: 2000px;
+}
+
 .sticky {
   position: sticky;
   top: 0;

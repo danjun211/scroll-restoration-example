@@ -7,6 +7,11 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      window.navigation.addEventListener("navigate", (event) => {
+        console.log(event);
+      });
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

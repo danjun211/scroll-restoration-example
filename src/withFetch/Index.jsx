@@ -5,7 +5,7 @@ function Index() {
   return (
     <>
       <Header title="Root" />
-      <Contents count={1000} />
+      <Contents pageNumber={0} count={1000} />
     </>
   );
 }

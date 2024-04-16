@@ -7,7 +7,7 @@ const useAppStore = create()(
     immer((set) => ({
       mode: "즉시 로드",
       delay: 0,
-      items: [],
+      items: [[], [], []],
       setMode: (mode) =>
         set((state) => {
           switch (mode) {
@@ -30,7 +30,13 @@ const useAppStore = create()(
     {
       name: "store-restoration-example-storage", // name of the item in the storage (must be unique)
       storage: createJSONStorage(() => localStorage), // (optional) by default, 'localStorage' is used
-      skipHydration: true,
+      partialize: (state) => {
+        if (localStorage.getItem("persist") === "Y") return state;
+
+        return Object.fromEntries(
+          Object.entries(state).filter(([key]) => !["items"].includes(key))
+        );
+      },
     }
   )
 );

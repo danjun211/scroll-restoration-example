@@ -34,6 +34,10 @@ const router = createBrowserRouter([
   },
 ]);
 
+window.addEventListener("scroll", () => {
+  console.log("scroll");
+});
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <RouterProvider router={router} />
 );
